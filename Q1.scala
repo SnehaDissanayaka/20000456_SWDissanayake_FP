@@ -6,6 +6,7 @@ object Q1 extends App {
  //  var c = 'X'
  //  printf("%d %d %d %d %d %.1f %.1f %s",i,j,m,n,k,f,g,c)
  //  printf("%d",i)
+   println ("\nQuestion 2\n");
    var x1:Int = k + 12 * m	
    var x2:Double = m / j
    var x3:Int = n % j
