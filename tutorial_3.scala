@@ -13,7 +13,7 @@ object tutorial3 extends App{
 
 //Quesion 4
   def discount(full_price:Double):Double=full_price*40/100;
-  def shipping(copies:Int):Double=50*3+(copies-50)*0.75;
+  def shipping(copies:Int):Double=copies*3+(copies-50)*0.75;
   def books(price:Double,copies:Int):Double=price*copies;
   def cost(price:Double,copies:Int):Double=books(price,copies)-discount(books(price,copies))+shipping(copies);
   printf("Total wholesale cost : %.2f\n",cost(24.95,60));
