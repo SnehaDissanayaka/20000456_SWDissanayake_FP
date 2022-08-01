@@ -34,7 +34,7 @@ object tutorial4 extends App {
     printf("%s\n",formatNames("Benny")(toUpper(_)))
     printf("%s%s\n",formatNames("Niroshan".substring(0,2).toString)(toUpper(_)),formatNames("Niroshan".substring(2))(toLower(_)))
     printf("%s\n",formatNames("Saman")(toLower(_)))
-    printf("%s%s%s",formatNames("Kumara"(0).toString)(toUpper(_)),formatNames("Kumara".substring(1,4))(toLower(_)),formatNames("Kumara"(5).toString)(toUpper(_)))
+    printf("%s%s%s",formatNames("Kumara"(0).toString)(toUpper(_)),formatNames("Kumara".substring(1,5))(toLower(_)),formatNames("Kumara"(5).toString)(toUpper(_)))
 }
 
 
