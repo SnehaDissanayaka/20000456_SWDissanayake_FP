@@ -6,7 +6,12 @@ object question_6 extends App{
         case _ => fib(n-1)+fib(n-2)
     }
 
-    println(fib(4));
-    println(fib(10));
+    def fibSeq(n:Int):Unit= {
+        if (n > 0) fibSeq(n-1)
+        println(fib(n));
+    }
+
+    fibSeq(4);
+    fibSeq(10);
 
 }
