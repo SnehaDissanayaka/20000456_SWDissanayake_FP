@@ -5,7 +5,7 @@ object tutorial4 extends App {
         case x if x>20000 => x*.02
         case x if x>200000 => x*.04
         case x if x>2000000 => x*.035
-        case x if x>20000000 => x*.06
+        case x if x>20000000 => x*.065
     }
     print("The deposited amount : ");
     var deposit = scala.io.StdIn.readInt();
