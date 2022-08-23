@@ -20,5 +20,6 @@ object question_2 extends App{
         primeSeq(n-1);
 
     }
+    }
     primeSeq(10);
 }

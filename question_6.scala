@@ -1,4 +1,4 @@
-object question_2 extends App{
+object question_6 extends App{
     
     def fib(n:Int):Int = n match{
         case 0 => 0;

@@ -1,4 +1,4 @@
-object question_2 extends App{
+object question_5 extends App{
     
     def isEven(n:Int):Boolean= n match{
     case 0 => true
