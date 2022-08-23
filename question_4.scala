@@ -7,5 +7,5 @@ object question_4 extends App{
     def isOdd(n:Int):Boolean = !(isEven(n))
 
     println(isEven(5));
-
+    println(isEven(56));
 }

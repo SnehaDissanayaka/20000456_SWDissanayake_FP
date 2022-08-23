@@ -7,5 +7,6 @@ object question_6 extends App{
     }
 
     println(fib(4));
+    println(fib(10));
 
 }
