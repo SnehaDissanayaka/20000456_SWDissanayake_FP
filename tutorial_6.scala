@@ -1,22 +1,37 @@
 object tutorial_6 extends App{
 
-    val alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	val alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-    val Encrypt=(c:Char,key:Int,a:String)=>
-    a((a.indexOf(c.toUpper)+key)%a.size);
+	val shift = scala.io.StdIn.readLine("Shift By = ").toInt; 
 
-    val Decrypt=(c:Char,key:Int,a:String)=>
-    a((a.indexOf(c.toUpper)-key)%a.size);
+	val inputText = scala.io.StdIn.readLine("Input the string = ")
 
-    val cipher=(algo:(Char,Int,String)=>
-    Char,s:String,key:Int,a:String)=>
-    s.map(algo(_,key,a));
+	val outputText_1 = inputText.map( (c: Char) => { 
 
-    val ct=cipher(Encrypt,text,5,alphabet);
+		val x = alphabet.indexOf(c.toUpper)
 
-    val pt=cipher(Decrypt,ct,5,alphabet);
+		if (x == -1){
+			c
+		}
+		else{
+			alphabet((x + shift) % alphabet.size)
+			} 
+	});
 
-    val text= "thff";
 
-    println(ct.map(_.toLower));
+	val outputText_2 = outputText_1.map( (c: Char) => { 
+
+		val x = alphabet.indexOf(c.toUpper)
+
+		if ((x - shift)<0){
+			alphabet((x - shift)+26)
+		}
+		else{
+			alphabet((x - shift) % alphabet.size)
+			} 
+ 
+	});
+
+	println("Encrypted string = "+outputText_1);
+	println("Decrypted string = "+outputText_2);
 }
