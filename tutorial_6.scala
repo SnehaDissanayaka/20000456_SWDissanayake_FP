@@ -24,7 +24,7 @@ object tutorial_6 extends App{
 		val x = alphabet.indexOf(c.toUpper)
 
 		if ((x - shift)<0){
-			alphabet((x - shift)+26)
+			alphabet((x - shift)+alphabet.size)
 		}
 		else{
 			alphabet((x - shift) % alphabet.size)
