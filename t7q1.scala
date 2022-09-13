@@ -9,5 +9,5 @@ class Rational(n:Int, d:Int) {
     def denom = d
 
     def neg = new Rational(-this.numer, this.denom)
-    override def toString(): String = numer +"i, "+ denom+"j"
+     override def toString(): String = numer +"/"+ denom
 }
